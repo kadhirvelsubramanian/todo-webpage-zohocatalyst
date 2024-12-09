@@ -1,0 +1,12 @@
+{
+  "client": {
+    "source": "client"
+  },
+  "functions": {
+    "targets": [
+      "todoservices"
+    ],
+    "ignore": [],
+    "source": "functions"
+  }
+}

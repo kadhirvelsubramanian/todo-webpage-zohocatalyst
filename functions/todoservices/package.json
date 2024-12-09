@@ -1,0 +1,10 @@
+{
+	"name": "todoservices",
+	"version": "1.0.0", 
+	"main": "index.js",
+	"author": "kathirguru2005@gmail.com",
+	"dependencies": {
+		"express": "^4.21.1",
+		"zcatalyst-sdk-node": "latest"
+	}
+}

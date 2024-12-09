@@ -1,0 +1,30 @@
+{
+  "defaults": {
+    "project": 1,
+    "env": 1
+  },
+  "actives": {
+    "project": 1,
+    "env": 1
+  },
+  "projects": [
+    {
+      "idx": 1,
+      "id": "10479000000007080",
+      "name": "Kadhirvel-Zitraar",
+      "domain": {
+        "id": "50023445845",
+        "name": "kadhirvel-zitraar-60034374144.development"
+      },
+      "timezone": "Asia/Kolkata",
+      "env": [
+        {
+          "idx": 1,
+          "id": "60034374144",
+          "name": "Development",
+          "type": 3
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>mywebclient</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <script src="https://static.zohocdn.com/catalyst/sdk/js/4.0.0/catalystWebSDK.js"></script>
+    <script src="/__catalyst/sdk/init.js"></script>
+</head>
+
+<body>
+    <div id="temp">
+        <div id ="inup">
+        <h6 id="prompt_in">Already having account?</h6>
+        <button  style="display:flex" id="signin" onclick="signin_func()">Sign in</button>
+        <h6 id="prompt_up">New User?create new account</h6>
+        <button  style="display:flex" id="signup" onclick="signup_func()">Sign up</button>
+        </div>
+        <div id="image">
+        <img src="home_page.png" id="sticky_notes">
+        </div>
+    </div>
+    
+    <div id="signup_bg">
+        <div id ="signup_container">
+            <form id="signup_form">
+                <div id="signup_header">
+                    <div id="signup_header_name">STICKY WALL</div>
+                    <div id="signup_close">&times</div>
+                </div>
+                <div id="signup_body">
+                    <div id =signup_fields>
+                        <label id="slf">First name : </label>
+                        <input type="text" id="signup_firstname" required>
+                    </div>
+                    <div id =signup_fields>
+                        <label id="sll">Last Name : </label>
+                        <input type="text" id="signup_lastname" required>
+                    </div>
+                    <div id =signup_fields>
+                        <label id="sle">E-mail : </label>
+                        <input type="email" id="signup_email" required>
+                    </div>
+                </div>
+                <div id="signup_submit">
+                    <input type="submit">
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <div id="inner_page">
+        <div id="edit_bg">
+            <div id="edit_container">
+                <div id="edit_header"></div>
+                <div id="edit_value">
+                    <div>
+                        <label>Enter TODO : </label><input type="text" id="todo_name_edit"><br><br>
+                    </div>
+                    <div>
+                        <label>COMPLETED : </label><input type="radio" name="ECOMPLETED" id="ECOMPLETED" value=true>YES<input type="radio" name="ECOMPLETED" value=false id="ENCOMPLETED">NO<br>
+                    </div>
+                </div> 
+                <div id="buttonss">
+                    <button id="submit" onclick="submit_edit()">SUBMIT</button>
+                    <button id="close" onclick="close_edit()">CLOSE</button> 
+                </div>
+            </div>
+        </div>
+        <div id ="form_bg">
+            <div id="form">
+                <h1>TODO INPUT FORM</h1>
+                <br><br>
+                <div>
+                <label>Enter ID : </label><input type="number" id="todo_id_form"><br><br>
+                </div>
+                <div>
+                    <label>Enter TODO : </label><input type="text" id="todo_name_form"><br><br>
+                </div>
+                <div>
+                    <label>COMPLETED : </label><input type="radio" name="COMPLETED" id="COMPLETED" value=true>YES<input type="radio" name="COMPLETED" value=false id="NCOMPLETED">NO<br>
+                </div>
+                <div id="buttonss">
+                    <button id="submit" onclick="submit_form()">SUBMIT</button>
+                    <button id="close" onclick="close_form()">CLOSE</button>
+                </div>
+            </div>
+        </div>
+        <div id="del_bg">
+            <div id="del_container">
+                <div id="del_msg">
+                    Do you continue to delete the Todo
+                </div>
+                <div id="del_button">
+                    <button id="continue" onclick="continue_func()">Continue</button>
+                    <button id="delete" onclick="discard_func()">Discard</button>
+                </div>
+            </div>
+        </div>
+        
+        <div id="header_box">
+            <div id="header">
+                Sticky Wall
+            </div>
+            <img src="image.png" onclick="profile()" id="pro_image">
+        </div>
+        <div id="sign_bg">
+        <div id="profile" >
+            <div id="close_sign" onclick="close_sign()">&times</div>
+            <div id="profile_header">
+                WELCOME
+            </div>
+            <div id="name_details"> </div>
+            <div id="pro_sign">Signed In as</div>
+            <div id="mail_details"></div>
+            <div id="profile_buttons">
+                <button  style="display:flex" id="view_profile" onclick="view_profile()">view profile</button>
+                <button  style="display:flex" id="logout" onclick="logout_func()">log out</button>
+            </div>
+        </div>
+        </div>
+        <br>
+        <div id="all_todo">
+            <div id="add_todo" onclick="add_todo_func()">+</div>
+        </div>
+    </div>
+
+<div id="login_bg">
+    <!-- <div id="login_close"> -->
+    <div id="login_container"></div>
+    <!-- </div> -->
+</div>
+
+</body>
+
+</html>
+
+
